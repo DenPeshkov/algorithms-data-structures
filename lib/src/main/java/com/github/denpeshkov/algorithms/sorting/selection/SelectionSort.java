@@ -5,10 +5,10 @@ import static com.github.denpeshkov.utils.ComparableUtils.less;
 
 import com.github.denpeshkov.algorithms.sorting.SortingFunction;
 
-public class SelectionSort implements SortingFunction {
+public class SelectionSort<T extends Comparable<? super T>> implements SortingFunction<T> {
 
   @Override
-  public <T extends Comparable<? super T>> void sort(T[] arr, int from, int to) {
+  public void sort(T[] arr, int from, int to) {
     for (int i = from; i < to; i++) {
       int minInd = i;
 

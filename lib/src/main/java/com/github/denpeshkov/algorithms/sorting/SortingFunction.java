@@ -1,13 +1,13 @@
 package com.github.denpeshkov.algorithms.sorting;
 
 @FunctionalInterface
-public interface SortingFunction {
+public interface SortingFunction<T extends Comparable<? super T>> {
 
-  default <T extends Comparable<? super T>> void sort(T[] arr) {
+  default void sort(T[] arr) {
     sort(arr, 0, arr.length);
   }
 
-  <T extends Comparable<? super T>> void sort(T[] arr, int from, int to);
+  void sort(T[] arr, int from, int to);
 
   // TODO add sort for List
 }
