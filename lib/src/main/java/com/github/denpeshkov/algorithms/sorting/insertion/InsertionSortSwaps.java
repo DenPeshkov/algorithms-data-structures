@@ -1,9 +1,9 @@
-package com.github.denpeshkov.sorting.insertion;
+package com.github.denpeshkov.algorithms.sorting.insertion;
 
 import static com.github.denpeshkov.utils.ArrayUtils.swap;
 import static com.github.denpeshkov.utils.ComparableUtils.less;
 
-import com.github.denpeshkov.sorting.SortingFunction;
+import com.github.denpeshkov.algorithms.sorting.SortingFunction;
 
 public class InsertionSortSwaps implements SortingFunction {
 

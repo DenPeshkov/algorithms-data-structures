@@ -1,4 +1,4 @@
-package com.github.denpeshkov.sorting;
+package com.github.denpeshkov.algorithms.sorting;
 
 @FunctionalInterface
 public interface SortingFunction {

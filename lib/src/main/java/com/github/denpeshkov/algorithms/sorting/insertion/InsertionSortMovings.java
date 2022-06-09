@@ -1,8 +1,8 @@
-package com.github.denpeshkov.sorting.insertion;
+package com.github.denpeshkov.algorithms.sorting.insertion;
 
 import static com.github.denpeshkov.utils.ComparableUtils.greater;
 
-import com.github.denpeshkov.sorting.SortingFunction;
+import com.github.denpeshkov.algorithms.sorting.SortingFunction;
 
 public class InsertionSortMovings implements SortingFunction {
 

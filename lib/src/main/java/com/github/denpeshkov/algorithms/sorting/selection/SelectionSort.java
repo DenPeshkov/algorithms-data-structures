@@ -1,9 +1,9 @@
-package com.github.denpeshkov.sorting.selection;
+package com.github.denpeshkov.algorithms.sorting.selection;
 
 import static com.github.denpeshkov.utils.ArrayUtils.swap;
 import static com.github.denpeshkov.utils.ComparableUtils.less;
 
-import com.github.denpeshkov.sorting.SortingFunction;
+import com.github.denpeshkov.algorithms.sorting.SortingFunction;
 
 public class SelectionSort implements SortingFunction {
 
