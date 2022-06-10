@@ -2,8 +2,13 @@ package com.github.denpeshkov.algorithms.sorting.merge;
 
 import com.github.denpeshkov.algorithms.merge.binary.inplace.BinaryMergeInPlace;
 import com.github.denpeshkov.algorithms.sorting.SortingFunction;
+import lombok.RequiredArgsConstructor;
 
+@RequiredArgsConstructor
+@SuppressWarnings("SameNameButDifferent")
 public class MergeSortTopDown<T extends Comparable<? super T>> implements SortingFunction<T> {
+
+  private final BinaryMergeInPlace<T> binaryMergeInPlace;
 
   @Override
   public void sort(T[] arr, int first, int last) {
@@ -23,6 +28,6 @@ public class MergeSortTopDown<T extends Comparable<? super T>> implements Sortin
     sort(arr, first, middle, aux);
     sort(arr, middle, last, aux);
 
-    new BinaryMergeInPlace<T>().merge(arr, first, middle, last, aux);
+    binaryMergeInPlace.merge(arr, first, middle, last, aux);
   }
 }
