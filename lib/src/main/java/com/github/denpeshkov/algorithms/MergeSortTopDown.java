@@ -1,7 +1,5 @@
-package com.github.denpeshkov.algorithms.sorting.merge;
+package com.github.denpeshkov.algorithms;
 
-import com.github.denpeshkov.algorithms.merge.binary.inplace.BinaryMergeInPlace;
-import com.github.denpeshkov.algorithms.sorting.SortingFunction;
 import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor

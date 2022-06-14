@@ -1,8 +1,6 @@
-package com.github.denpeshkov.algorithms.sorting.insertion;
+package com.github.denpeshkov.algorithms;
 
 import static com.github.denpeshkov.utils.ComparableUtils.greater;
-
-import com.github.denpeshkov.algorithms.sorting.SortingFunction;
 
 public class InsertionSortMovings<T extends Comparable<? super T>> implements SortingFunction<T> {
 

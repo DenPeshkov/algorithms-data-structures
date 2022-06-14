@@ -1,4 +1,4 @@
-package com.github.denpeshkov.algorithms.sorting;
+package com.github.denpeshkov.algorithms;
 
 @FunctionalInterface
 public interface SortingFunction<T extends Comparable<? super T>> {

@@ -1,9 +1,7 @@
-package com.github.denpeshkov.algorithms.sorting.selection;
+package com.github.denpeshkov.algorithms;
 
 import static com.github.denpeshkov.utils.ArrayUtils.swap;
 import static com.github.denpeshkov.utils.ComparableUtils.less;
-
-import com.github.denpeshkov.algorithms.sorting.SortingFunction;
 
 public class SelectionSort<T extends Comparable<? super T>> implements SortingFunction<T> {
 

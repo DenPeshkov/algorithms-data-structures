@@ -1,4 +1,4 @@
-package com.github.denpeshkov.algorithms.merge.binary.inplace;
+package com.github.denpeshkov.algorithms;
 
 @FunctionalInterface
 public interface BinaryMergeInPlaceFunction<T extends Comparable<? super T>> {
