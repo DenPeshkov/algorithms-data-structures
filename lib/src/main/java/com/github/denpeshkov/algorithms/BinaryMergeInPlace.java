@@ -3,14 +3,13 @@ package com.github.denpeshkov.algorithms;
 import static com.github.denpeshkov.utils.ComparableUtils.greater;
 import static com.github.denpeshkov.utils.ComparableUtils.lessOrEqual;
 
-import java.util.Arrays;
-
 public class BinaryMergeInPlace<T extends Comparable<? super T>>
     implements BinaryMergeInPlaceFunction<T> {
 
   @Override
   public void merge(T[] arr, int first, int middle, int last) {
-    T[] aux = Arrays.copyOf(arr, arr.length);
+    @SuppressWarnings("unchecked")
+    T[] aux = (T[]) new Comparable[arr.length];
 
     merge(arr, first, middle, last, aux);
   }
