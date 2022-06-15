@@ -1,7 +1,7 @@
 plugins {
     `java-library`
 
-    id("com.diffplug.spotless") version "6.7.0"
+    id("com.diffplug.spotless") version "6.7.2"
     id("net.ltgt.errorprone") version "2.0.2"
 }
 
