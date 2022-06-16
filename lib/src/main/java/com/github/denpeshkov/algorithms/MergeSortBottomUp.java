@@ -1,12 +1,21 @@
 package com.github.denpeshkov.algorithms;
 
-import lombok.RequiredArgsConstructor;
+import lombok.AccessLevel;
+import lombok.Getter;
 
-@RequiredArgsConstructor
-@SuppressWarnings("SameNameButDifferent")
+@Getter(AccessLevel.PACKAGE)
 public class MergeSortBottomUp<T extends Comparable<? super T>> implements SortingFunction<T> {
 
   private final BinaryMergeInPlace<T> binaryMergeInPlace;
+
+  /** Bottom-up Mergesort using Binary in-place Merge */
+  public MergeSortBottomUp() {
+    binaryMergeInPlace = new BinaryMergeInPlace<>();
+  }
+
+  MergeSortBottomUp(BinaryMergeInPlace<T> binaryMergeInPlace) {
+    this.binaryMergeInPlace = binaryMergeInPlace;
+  }
 
   @Override
   public void sort(T[] arr, int from, int to) {

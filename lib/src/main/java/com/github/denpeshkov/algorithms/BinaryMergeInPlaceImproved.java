@@ -3,7 +3,7 @@ package com.github.denpeshkov.algorithms;
 import static com.github.denpeshkov.utils.ComparableUtils.less;
 
 public class BinaryMergeInPlaceImproved<T extends Comparable<? super T>>
-    implements BinaryMergeInPlaceFunction<T> {
+    extends BinaryMergeInPlace<T> {
 
   @Override
   public void merge(T[] arr, int first, int middle, int last) {
@@ -13,6 +13,7 @@ public class BinaryMergeInPlaceImproved<T extends Comparable<? super T>>
     merge(arr, first, middle, last, aux);
   }
 
+  @Override
   public void merge(T[] arr, int first, int middle, int last, T[] aux) {
     System.arraycopy(arr, first, aux, 0, middle - first);
 
